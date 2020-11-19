@@ -1,18 +1,21 @@
 // modules
 import React from 'react';
-// components
+// components and const
 import Header from './components/Header';
 import Note from './components/Note';
 import Footer from './components/Footer';
+import notes from './notes'
 
-function App() {
-    return(
-        <>
+
+const App = () => 
+    {
+        return <>
             <Header />
-            <Note />
+            <Note notes={notes} />
             <Footer />
-        </>
-    )
-}
+        </>;
+    }
+    
+
 
 export default App;
